@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<section class="profile">
+     <div>
+        <a href="{% url "logout" %}">
+          <button id="hello">Logout</button></a>
+      </div>
+    </div>
+  </header>
+</section>
+{% endblock %}

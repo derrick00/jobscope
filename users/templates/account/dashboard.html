@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<section class="profile">
+  <header class="profile-header">
+    <div class="details">
+      <img src="{% thumbnail request.user.profile.photo 90x90%}" alt="John Doe" class="profile-pic">
+      <h1 class="heading">Welcome, {{ request.user.username }}</h1>
+      <div class="location">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12 ,2Z"></path>
+</svg>
+        <p>Nairobi, Kenya</p>
+      </div>
+      <div class="stats">
+        <div class="col-4">
+          <p>Username</p>
+          <h4>{{ request.user.username}}</h4>
+        </div>
+      </div>
+      <div>
+        <a href="{% url "jobscope:service_list" %}">
+          <button id="hello">Services</button></a>
+      </div>
+
+      <div>
+        <a href="{% url "logout" %}">
+          <button id="hello">Logout</button></a>
+      </div>
+    </div>
+  </header>
+</section>
+{% endblock %}

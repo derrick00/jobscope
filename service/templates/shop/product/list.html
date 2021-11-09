@@ -1,0 +1,37 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+ {% if category %}{{ category.name }}{% else %}Full List{% endif %}
+{% endblock %}
+
+{% block content %}
+<div id="sidebar">
+  <h3>About</h3>
+  <div class="aboutdiv">
+  <p>This is an about place, ill update it later</p>
+  </div>
+  <h3>Feedback</h3>
+  <div class="aboutdiv">
+	  <form class="feed_form" method="post">
+		  {{ feed_form.as_p }}
+	          <p><input type="submit" value="post"></p>
+	          {% csrf_token %}
+	  </form>
+
+  </div>
+
+</div>
+<div id="main" class="product-list">
+  <h1>Categories</h1>
+  {% for category in categories %}
+  <div class="item">
+      <img style="height:100px, weight:100px" src="{% if category.image %}{{ category.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
+    </a> 
+    <a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
+    <br>
+  </div>
+  {% endfor %}
+</div>
+{% include "shop/pagination.html" with page=services %}
+{% endblock %}

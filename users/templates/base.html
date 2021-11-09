@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link href ="{% static "css/base.css"  %}" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <span class="logo">Jobscope</span>
+      </div>
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li class="{{ message.tags }}">
+          {{ message|safe }}
+            <a href="#" class="close">x</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+      <div class="content">
+        {% block content%}
+        {% endblock %}
+      </div>
+    </div>
+   
+  </body>
+</html>
+
