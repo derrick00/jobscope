@@ -54,14 +54,14 @@ body {
 }
 
 .header{
-  color:black;
-  background-color:black;
+  color:#5993bb;
+  background-color:#5993bb;
   padding:20px;
   margin:10px;
   display:center;
   border-radius:5px;
 }
-.logo{
+  .logo{
   text-align:center;
   color:white;
   padding-left:40%;
@@ -92,16 +92,16 @@ button {
  
 }
 .form2{
-  background-color: black;
+  background-color:#5993bb;
   width:60%;
   float:left;
   color:white;
   margin-left:10px;
-  border-radius: 5px;
+  border-radius: 5pxi
   padding:10px;
 }
 .form{
-background-color: green;
+background-color:#5993bb;
 color:white;
 width:35%;
 padding:10px;
@@ -299,7 +299,7 @@ ul.errorlist {
 #content {
   padding:0 100px;
   overflow:hidden;
-  background-color:#4a3626;
+  background-color:#808080;
   opacity:0.9;
 }
 

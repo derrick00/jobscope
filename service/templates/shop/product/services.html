@@ -11,17 +11,12 @@
   <div class="aboutdiv">
   <p>This is an about place, ill update it later</p>
   </div>
-  <h3>Feedback</h3>
+
   <div class="aboutdiv">
-	  <form class="feed_form" method="post">
-		  {{ feed_form.as_p }}
-	          <p><input type="submit" value="post"></p>
-	          {% csrf_token %}
-	  </form>
 
   </div>
 
-</div>
+ </div>
 <div id="main" class="product-list">
 	<h1>{{ category.name }}</h1>
   {% for s in services %}
