@@ -14,6 +14,11 @@
   </h2>
   <p class="price">{{ service.price }} Ksh</p>
   {{ service.description|linebreaks }}
+  {% for item in items %}
+  <ul>
+	  <li>{{ item.name }}: {{ item.price }}</li>
+  </ul>
+  {% endfor %}
   <form class="feed_form" method="post">
 	  {{ form.as_p }}
 	  <p><input type="submit" value="Book"></p>

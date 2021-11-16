@@ -10,6 +10,15 @@
   <h3>New PAge</h3>
   <div class="aboutdiv">
   <p>This is an about place, ill update it later</p>
+  <div class="booked">
+  <h3>My active bookings</h3>
+  {% for a in booked_services %}
+  <ul>
+	  <li class="each">{{ a.service }}</li>
+	  <a href=" a.get_absolute_url"><input class="pay" type="submit" value="Pay"></a>
+  </ul>
+  {% endfor %}
+  </div>
   </div>
 
   <div class="aboutdiv">
@@ -28,5 +37,4 @@
   </div>
   {% endfor %}
 </div>
-{% include "shop/pagination.html" with page=services %}
 {% endblock %}

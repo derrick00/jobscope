@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import braintree
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,9 +41,10 @@ INSTALLED_APPS = [
     #local
     'users.apps.UsersConfig',
     'booking.apps.BookingConfig',
+    'service.apps.ServiceConfig',
+    'payment.apps.PaymentConfig',
     #thirdparty
     'easy_thumbnails',
-    'service.apps.ServiceConfig'
 ]
 
 MIDDLEWARE = [
@@ -129,4 +131,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static'),
 ]
+#Braintree payment configuration
+
+#Braintree settings
+BRAINTREE_MERCHANT_ID = os.environ['BRAINTREE_ID']
+BRAINTREE_PUBLIC_KEY = os.environ['BRAINTREE_PUB_KEY']
+BRAINTREE_PRIVATE_KEY = os.environ['BRAINTREE_PRIV_KEY']
+
+BRAINTREE_CONF = braintree.Configuration(braintree.Environment.Sandbox,
+        BRAINTREE_MERCHANT_ID, BRAINTREE_PUBLIC_KEY, BRAINTREE_PRIVATE_KEY)
+
 
