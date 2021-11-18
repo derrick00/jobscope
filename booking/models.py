@@ -24,7 +24,7 @@ class Booking(models.Model):
     def __str__(self):
         return 'Booking {}'.format(self.id)
     def get_absolute_url(self):
-        return reverse('jobscope:booking', args=[self.name])
+        return reverse('payment:process', args=[self.id])
 
 
 

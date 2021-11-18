@@ -15,7 +15,7 @@
   {% for a in booked_services %}
   <ul>
 	  <li class="each">{{ a.service }}</li>
-	  <a href=" a.get_absolute_url"><input class="pay" type="submit" value="Pay"></a>
+	  <a href="{{ a.get_absolute_url }}"><input class="pay" type="submit" value="Pay"></a>
   </ul>
   {% endfor %}
   </div>

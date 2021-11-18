@@ -6,13 +6,14 @@
 {% endblock %}
 
 {% block content %}
-<div class="product-detail">
+
+<div  class="product-detail">
   <h1>{{ service.name }}</h1>
   <img style="height:100px, weight=100px" src="{% if service.image %}{{service.image.url}}{%else%}{%static "img/no_image.png"%}{%endif%}">
   <h2>
     <a href="{{ service.category.get_absolute_url }}">{{ service.category }}</a>
   </h2>
-  <p class="price">{{ service.price }} Ksh</p>
+  <p class="price">{{ service.price }} </p>
   {{ service.description|linebreaks }}
   {% for item in items %}
   <ul>
@@ -24,6 +25,5 @@
 	  <p><input type="submit" value="Book"></p>
 	  {% csrf_token %}
   </form>
-
-</div>
+ </div>
 {% endblock %}
