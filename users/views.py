@@ -18,6 +18,9 @@ def dashboard(request):
     return render(request, 'account/dashboard.html')
 def about(request):
     return render(request, 'account/about.html')
+def logged_out(request):
+    return render(request, 'account/logged_out.html')
+
 
 
 def user_login(request):

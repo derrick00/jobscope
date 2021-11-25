@@ -7,6 +7,9 @@
   <div class="thank">
 <h1>Your payment has not been processed.</h1>
   </div>
-<p>There was a problem processing your payment.</p>
+  <p>There was a problem processing your payment.<br>
+  Please try again later.</p>
+<a href="{% url "dashboard" %}">
+	<button class="sign">Dashboard</button></a>
 </div>
 {% endblock %}
