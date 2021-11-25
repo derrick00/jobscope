@@ -8,6 +8,9 @@ from booking.models import Booking
 from booking.forms import BookingForm
 # Create your views here.
 
+def service_about(request):
+    return render(request, 'account/about.html')
+
 def service_list(request, category_slug=None):
     category = None
     categories = Category.objects.all()

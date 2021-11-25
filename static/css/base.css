@@ -3,19 +3,22 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  background-color:#FEB1C0;
+  bckground: #009FFF;
+  bakground: linear-gradient(to right, #ec2F4B, #009FFF);
 }
 
 .profile-header {
   padding:10px;
   min-height: 60vh;
-  background: #009FFF;
-  background: linear-gradient(to right, #ec2F4B, #009FFF);
+  background-color:#808080;
+  opacity:0.9;
   color: white;
   clip-path: ellipse(100vw 60vh at 50% 50%);
   display: flex;
   align-items: center;
   justify-content: center;
+  width:80%;
+  margin-left:130px;
 }
 
 .details {
@@ -55,7 +58,8 @@ body {
 
 .header{
   color:#5993bb;
-  background-color:#5993bb;
+  background-color:#808080;
+  opacity:0.9;
   padding:20px;
   margin:10px;
   display:center;
@@ -83,7 +87,7 @@ button {
   width: 40%;
   padding: 1.5em auto;
   margin: 1em auto;
-  background-color: #FEB1C0;
+  background-color: #5993bb;
   border: none;
   border-radius: 3px;
   text-transform: uppercase;
@@ -92,16 +96,19 @@ button {
  
 }
 .form2{
-  background-color:#5993bb;
+  background-color:#808080;
+  opacity:0.9;
   width:60%;
   float:left;
   color:white;
   margin-left:10px;
-  border-radius: 5pxi
+  border-radius: 5pxi;
   padding:10px;
+  border-radius: 10px;
 }
 .form{
-background-color:#5993bb;
+background-color:#808080;
+opacity:0.9;
 color:white;
 width:35%;
 padding:10px;
@@ -525,3 +532,23 @@ form div.field {
 .pay{
     margin-left: 100px;
 }
+.payment{
+  background-color:#808080;
+  opacity:0.9;
+  width:60%;
+  float:left;
+  color:white;
+  margin-left:10px;
+  border-radius: 5pxi;
+  padding:10px;
+  border-radius: 10px;
+}
+
+.feed_form{
+  float:left;
+  padding:20px;
+  background-color: #808080;
+  margin-right: 80px;
+  border-radius: 10px;
+ }
+

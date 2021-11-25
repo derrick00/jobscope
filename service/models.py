@@ -52,6 +52,7 @@ class Item(models.Model):
 
 class Feedback(models.Model):
     name =models.ForeignKey(User, on_delete=models.CASCADE)
-    text = models.TextField(blank=True)
+    #email =models.EmailField(max_length=70,blank=True,unique=True)
+    text =models.TextField(blank=True)
     created=models.DateTimeField(auto_now_add=True)
     updated=models.DateTimeField(auto_now=True)

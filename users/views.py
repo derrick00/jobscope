@@ -16,6 +16,8 @@ from django.views.decorators.http import require_POST
 #if user has successfully authenticated run this
 def dashboard(request):
     return render(request, 'account/dashboard.html')
+def about(request):
+    return render(request, 'account/about.html')
 
 
 def user_login(request):

@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #007af3;
+}
+
+body {
+  background: #f2f2f2;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    p{
+        span{
+            color: teal;
+        }
+    }
+    .navbar-one{
+        display: flex;
+        justify-content: space-between;
+        li{
+            list-style-type: none;
+            display: flex;
+        }
+    }
+}
+*/
+.hero {
+  background: #20272e;
+  color: white;
+}
+
+.hero .introduction {
+  border-radius: 1cm;
+}
+
+.hero .introduction h1 {
+  margin-top: 0;
+  padding-top: 0.6cm;
+}
+
+.hero .introduction .details p {
+  padding: 0.2cm 2cm 0 0.2cm;
+}
+
+.hero .introduction .qualities {
+  margin-top: 2cm;
+}
+
+.hero .introduction .qualities li {
+  list-style-type: none;
+  font-size: 1.1em;
+}
+
+.hero .introduction .motto {
+  padding-bottom: 0.6cm;
+  color: var(--primary-color);
+}
+
+.main {
+  margin-left: 0.6cm;
+  opacity: 0.7;
+  margin-top: 1cm;
+}
+
+.main .info-jobscope {
+  text-align: left;
+}
+
+.service-description {
+  margin-left: 0;
+  padding-left: 0.6cm;
+  background-image: url(/Images/tools.jpg);
+  color: white;
+}
+
+.service-description .container {
+  text-align: left;
+  margin-top: 1cm;
+}
+
+.service-description .container h3 {
+  color: #5c4c06;
+  text-align: center;
+  margin-top: 0.5cm;
+}
+
+.service-description .container h4 {
+  margin: 0;
+  color: #20272e;
+}
+
+.service-description .container p {
+  margin: 0;
+  margin-bottom: 0.5cm;
+}
+
+.service-description .container ul {
+  margin-top: 0;
+  list-style-type: none;
+  display: inline;
+}
+
+.service-description .container ul li {
+  padding-right: 1cm;
+}
+
+.developers {
+  margin-top: 0cm;
+  color: black;
+  background: var(--primary-color);
+  text-align: center;
+}
+
+.developers .list {
+  margin-top: 1cm;
+  background: none;
+  height: 450px;
+}
+
+.developers .list ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2cm;
+  margin-bottom: 1cm;
+}
+
+.developers .list ul li {
+  background: #006bd6;
+  margin-top: 3cm;
+  margin-right: 0.5cm;
+  text-align: center;
+  padding: 2em 1em;
+  height: 70%;
+  width: 80%;
+  border-radius: 1em;
+  color: white;
+}
+
+.developers .list ul li img {
+  width: 5em;
+  height: 5em;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+/*# sourceMappingURL=about2.css.map */

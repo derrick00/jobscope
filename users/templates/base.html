@@ -4,10 +4,17 @@
   <head>
     <title>{% block title %}{% endblock %}</title>
     <link href ="{% static "css/base.css"  %}" rel="stylesheet">
+    <style type="text/css">
+    body{
+	    background-image:url({% static "img/background.jpeg" %});
+	    height:100%;
+	    width:100%;}
+	    </style>
+
   </head>
   <body>
     <div>
-      <div class="header">
+      <div id="header">
         <span class="logo">Jobscope</span>
       </div>
   {% if messages %}

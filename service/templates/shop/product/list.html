@@ -8,11 +8,9 @@
 {% block content %}
 
 <div id="sidebar">
-  <h3>About</h3>
-  <div class="aboutdiv">
-  <p>This is an about place, ill update it later</p>
-  </div>
-</div>
+	<a href="{% url "about" %}">
+	<button class ="sign">About</button></a>
+</div>  
 
 <div id="main" class="product-list">
   <h1>Categories</h1>
@@ -27,13 +25,16 @@
   {% endfor %}
 </div> 
 
-  <h3>Feedback</h3>
+  <h1>Feedback</h1>
+  <p>Reach out to us and tell what you think of our services.</p>
   <div class="aboutdiv">
 	  <form class="feed_form" method="post">
 		  {{ feed_form.as_p }}
-	          <p><input type="submit" value="post"></p>
+	          <p><input type="submit" value="Post"></p>
+		  <!-- <p><input type="reset" value="Reset"></p>  -->
 	          {% csrf_token %}
 	   </form>
  </div>
-</div>
+ </div>
+
 {% endblock %}

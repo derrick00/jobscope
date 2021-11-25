@@ -23,6 +23,7 @@ urlpatterns = [
     path('users/', include('users.urls')),
     path('service/', include('service.urls', namespace='jobscope')),
     path('payment/', include('payment.urls', namespace='payment')),
+    #path('about/', include('service_about.urls', namespace='service_about')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
