@@ -73,8 +73,8 @@ body {
 .service-description {
   margin-left: 0;
   padding-left: 0.6cm;
-  background-image: url(/Images/tools.jpg);
-  color: white;
+  background-image: url(/img/background.jpeg);
+  color:black;
 }
 
 .service-description .container {
@@ -148,5 +148,17 @@ body {
   border: 1px solid black;
   border-radius: 50%;
   margin-top: -4.5em;
+}
+  button {
+  height: 4em;
+  width: 40%;
+  padding: 1.5em auto;
+  margin: 1em auto;
+  background-color: #5993bb;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  transition: all 0.2s cubic-bezier(.4,0,.2,
 }
 /*# sourceMappingURL=about2.css.map */

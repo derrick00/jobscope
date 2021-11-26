@@ -34,7 +34,7 @@ def user_login(request):
                 login(request, user)
                 return redirect('dashboard')
             else:
-                messages.error(request, 'Your account has been deactivated')
+                messages.error(request, ' ')
 
 
         else:

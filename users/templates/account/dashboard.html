@@ -6,7 +6,6 @@
 <section class="profile">
   <header class="profile-header">
     <div class="details">
-      <img src="{% thumbnail request.user.profile.photo 90x90%}" alt="John Doe" class="profile-pic">
       <h1 class="heading">Welcome, {{ request.user.username }}</h1>
       <div>
         <a href="{% url "jobscope:service_list" %}">
